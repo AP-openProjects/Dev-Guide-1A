@@ -5,6 +5,6 @@ const navSlide= ()=>{
     burguer.addEventListener('click',()=> {
         nav.classList.toggle('nav-active')
     })
-}
+ }
 
 navSlide();
