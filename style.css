@@ -1,0 +1,251 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-image: linear-gradient(to right, #fc8621, #f9e0ae);
+  /* background-image: linear-gradient(to right, #fc8621, #c24914); */
+  /* background-color: #f9e0ae; */
+}
+
+/* h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+p {
+  font-size: 1.2rem;
+} */
+
+/*=============================================
+    ANCHOR HEADER
+    =============================================*/
+
+header {
+  background-color: #e9e9e9;
+  /*background-image: url(https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg);  */
+  /* background-image: url(https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_960_720.jpg); */
+  background-size: cover;
+  height: 10rem;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  min-height: 10%;
+  padding: 0.5rem 0;
+}
+
+.logo img {
+  width: 500px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  margin-top: 1rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.burguer {
+  display: none;
+  cursor: pointer;
+}
+
+.burguer div {
+  background-color: black;
+  height: 3px;
+  margin: 5px;
+  width: 25px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .logo img {
+    width: 400px;
+  }
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 86.5%;
+    top: 9%;
+    background-color: rgba(168, 165, 165, 0.822);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .burguer {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    padding: 0;
+    transition: transform 0.5s ease-in;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 86.5%;
+    top: 8.5%;
+    background-color: rgba(0, 0, 0, 0.432);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .burguer {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    padding: 0;
+    transition: transform 0.5s ease-in;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 86.5%;
+    top: 8.5%;
+    background-color: rgba(0, 0, 0, 0.432);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .burguer {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    padding: 0;
+    transition: transform 0.5s ease-in;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+}
+
+.grid-general {
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  gap: 5em;
+  justify-content: center;
+  margin-top: 20px;
+  /* margin: 200px 0px 300px 0px; */
+  /* background-color: orange; */
+}
+
+.card1,
+.card2,
+.card3 {
+  display: grid;
+  grid-template-rows: 230px 40px;
+  width: 230px;
+  height: 270px;
+  box-shadow: 0px 4px 4px 0 black;
+  text-align: center;
+  /* background-color: black; */
+  background-image: linear-gradient(to right, black, grey);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 0 0;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: underline grey;
+}
+
+.container-Info {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.container-card1,
+.container-card2,
+.container-card3 {
+  margin: auto;
+}
+
+#image1,
+#image2,
+#image3 {
+  border-bottom: 2px solid black;
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+  width: 230px;
+  height: 230px;
+}
+
+#image1:hover,
+#image2:hover,
+#image3:hover {
+  opacity: 0.6;
+}
