@@ -6,27 +6,23 @@ body {
   /* background-color: #f9e0ae; */
 }
 
-/* h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.7rem;
-}
-p {
-  font-size: 1.2rem;
-} */
-
 /*=============================================
     ANCHOR HEADER
     =============================================*/
 
 header {
-  background-color: #e9e9e9;
-  /*background-image: url(https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg);  */
-  /* background-image: url(https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_960_720.jpg); */
+  background-color: white;
   background-size: cover;
-  height: 10rem;
+  height: 6rem;
 }
+
+.principalImage {
+  background-image: url("img/fondo.jpg");
+  width: 100%;
+  height: 400px; 
+  background-size: cover; 
+  background-position: 50% 50%;
+} 
 
 nav {
   align-items: center;
@@ -216,6 +212,13 @@ h2 {
   text-align: center;
   color: black;
   text-decoration: underline grey;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
 }
 
 .container-Info {
