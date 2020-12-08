@@ -1,7 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  background-image: linear-gradient(to right, #fc8621, #f9e0ae);
+  /* background-image: linear-gradient(to right, #fc8621, #f9e0ae); */
+  /* background-image: linear-gradient(to right , #1d2d50, #133b5c); */
+  background-color: #f4f6ff;
   /* background-image: linear-gradient(to right, #fc8621, #c24914); */
   /* background-color: #f9e0ae; */
 }
@@ -11,7 +13,9 @@ body {
     =============================================*/
 
 header {
-  background-color: white;
+ background-color: #ba7967; 
+  /* background-image: linear-gradient(to right, #f0a500 , #cf7500); */
+  /* background-image: url("https://images.unsplash.com/photo-1585402210468-66f32841af08?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=375&q=80"); */
   background-size: cover;
   height: 6rem;
 }
@@ -19,10 +23,10 @@ header {
 .principalImage {
   background-image: url("img/fondo.jpg");
   width: 100%;
-  height: 400px; 
-  background-size: cover; 
+  height: 400px;
+  background-size: cover;
   background-position: 50% 50%;
-} 
+}
 
 nav {
   align-items: center;
@@ -33,7 +37,11 @@ nav {
 }
 
 .logo img {
+  padding-top: 10px; 
+  height: auto;
   width: 500px;
+  position: relative; 
+  bottom: 20px; 
 }
 
 .nav-links {
@@ -51,10 +59,15 @@ nav {
   color: black;
   font-size: 1.3rem;
   text-decoration: none;
+  height: auto;
+  width: 500px;
+  position: relative; 
+  bottom: 15px; 
 }
 
 .nav-links a:hover {
-  color: red;
+  color: white;
+  /* text-shadow: 1px 2px black; */
 }
 
 .burguer {
@@ -211,7 +224,7 @@ h2 {
   font-weight: bold;
   text-align: center;
   color: black;
-  text-decoration: underline grey;
+  text-decoration: underline gold;
 }
 
 h3 {
@@ -251,4 +264,28 @@ p {
 #image2:hover,
 #image3:hover {
   opacity: 0.6;
+}
+
+footer {
+  /* margin-top: 1500px; */
+  /* background: #808080; */
+  background-color: #b9ac92;
+}
+
+.ImageFooter {
+  padding-top: 10px;
+  height: auto;
+  width: 500px;
+  margin-left: 840px;
+  position: relative;
+  bottom: 20px;
+}
+
+.Copyright {
+  color: black;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 50px;
 }
