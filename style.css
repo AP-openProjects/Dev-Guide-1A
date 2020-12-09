@@ -13,7 +13,7 @@ body {
     =============================================*/
 
 header {
- background-color: #ba7967; 
+  background-color: #ba7967;
   /* background-image: linear-gradient(to right, #f0a500 , #cf7500); */
   /* background-image: url("https://images.unsplash.com/photo-1585402210468-66f32841af08?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=375&q=80"); */
   background-size: cover;
@@ -37,11 +37,11 @@ nav {
 }
 
 .logo img {
-  padding-top: 10px; 
+  padding-top: 10px;
   height: auto;
   width: 500px;
-  position: relative; 
-  bottom: 20px; 
+  position: relative;
+  bottom: 20px;
 }
 
 .nav-links {
@@ -61,8 +61,8 @@ nav {
   text-decoration: none;
   height: auto;
   width: 500px;
-  position: relative; 
-  bottom: 15px; 
+  position: relative;
+  bottom: 15px;
 }
 
 .nav-links a:hover {
@@ -227,16 +227,9 @@ h2 {
   text-decoration: underline gold;
 }
 
-h3 {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-}
-
 .container-Info {
   margin-top: 100px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 p {
@@ -264,6 +257,91 @@ p {
 #image2:hover,
 #image3:hover {
   opacity: 0.6;
+}
+
+.grid-devCards {
+  display: grid;
+  grid-template-columns: 270px 995px;
+  grid-template-rows: repeat(3,270px);
+  gap: 2em;
+  /* justify-content: center; */
+  margin-top: 50px;
+  /* margin: 200px 0px 300px 0px; */
+  /* background-color: orange; */
+  margin-bottom: 120px;
+  /* hay que hacer 3 filas y dos columnas */
+}
+
+.cardDev1,
+.cardDev2,
+.cardDev3 {
+  display: grid;
+  grid-template-rows: 230px 40px;
+  width: 230px;
+  height: 270px;
+  box-shadow: 0px 4px 4px 0 black;
+  text-align: center;
+  /* background-image: linear-gradient(to right, black, grey); */
+  /* background-color: gold; */
+  background-color: #fff3b2;
+  border-radius: 10px;
+
+  justify-self: left; 
+  margin-left: 40px;
+  /* esto deberia quedar igual */
+}
+
+.container-cardDev1,
+.container-cardDev2,
+.container-cardDev3 {
+  margin: auto;
+  /* background-color: red; */
+  /* esto deberia quedar igual */
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 0 0;
+  color: black;
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: 100px;
+  text-align: center;
+  color: black;
+  text-decoration: underline red;
+}
+
+.devCards-info {
+  /* background-color: #14ffec; */
+  /* background-color: #f1f1f1; */
+  background-color: #fff3b2;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 0 black;
+  height: 270px;
+}
+
+p.devCards-text {
+  margin-top: 60px;
+  font-size: 20px;
+  text-align: center; 
+  color: black;
+}
+
+#imageDev1,
+#imageDev2,
+#imageDev3 {
+  border-bottom: 2px solid grey;
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+  justify-content: center;
+  width: 230px;
+  height: 230px;
 }
 
 footer {
