@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -6,18 +10,17 @@ body {
   background-color: #f4f6ff;
   /* background-image: linear-gradient(to right, #fc8621, #c24914); */
   /* background-color: #f9e0ae; */
+  /* text-align: center; */
 }
 
-/*=============================================
-    ANCHOR HEADER
-    =============================================*/
-
 header {
-  background-color: #ba7967;
+  /* background-color: #ba7967; */
+  background-color: #20c1e1;
   /* background-image: linear-gradient(to right, #f0a500 , #cf7500); */
   /* background-image: url("https://images.unsplash.com/photo-1585402210468-66f32841af08?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=375&q=80"); */
   background-size: cover;
   height: 6rem;
+  /* position: fixed; */
 }
 
 .principalImage {
@@ -232,9 +235,28 @@ h2 {
   /* margin-bottom: 200px; */
 }
 
-p {
-  font-size: 1.2rem;
-  margin: 10px;
+.languages-info {
+  font-size: 1.3rem;
+  padding: 0 20px;
+}
+
+.languages-info::selection,
+b::selection,
+br::selection,
+.devCards-text::selection,
+img::selection,
+a::selection,
+.Copyright::selection {
+  background-color: #fde345;
+  color: #555;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection {
+  background-color: #333;
+  color: #fff;
 }
 
 .container-card1,
@@ -262,7 +284,7 @@ p {
 .grid-devCards {
   display: grid;
   grid-template-columns: 270px 995px;
-  grid-template-rows: repeat(3,270px);
+  grid-template-rows: repeat(3, 270px);
   gap: 2em;
   /* justify-content: center; */
   margin-top: 50px;
@@ -286,7 +308,7 @@ p {
   background-color: #fff3b2;
   border-radius: 10px;
 
-  justify-self: left; 
+  justify-self: left;
   margin-left: 40px;
   /* esto deberia quedar igual */
 }
@@ -326,11 +348,12 @@ h4 {
   height: 270px;
 }
 
-p.devCards-text {
+.devCards-text {
   margin-top: 60px;
   font-size: 20px;
-  text-align: center; 
+  text-align: center;
   color: black;
+  padding: 10px;
 }
 
 #imageDev1,
@@ -366,4 +389,23 @@ footer {
   padding-bottom: 10px;
   position: relative;
   top: 50px;
+}
+
+u {
+  text-decoration: underline red;
+}
+
+h6 {
+  font-size: 30px;
+  padding: 0 20px;
+  margin: 0;
+  color: #20c1e1;
+  text-shadow: 1px 1px 2px black;
+}
+
+#image4 {
+  margin: 20px 10%;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0 black;
 }
