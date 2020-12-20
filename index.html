@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Dev-Guide</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img class="imagen-navegacion" src="img/logo.png" alt="" />
+      </div>
+
+      <ul class="nav-links {{slide}}">
+        <li>
+          <a href="#title-html-info">HTML</a>
+        </li>
+        <li>
+          <a href="#title-css-info">CSS</a>
+        </li>
+        <li>
+          <a href="#title-js-info">JAVASCRIPT</a>
+        </li>
+        <li>
+          <a href="#about-us" class="about-us-nav">SOBRE NOSOTROS</a>
+        </li>
+      </ul>
+
+      <div class="burguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <picture>
+    <image src="img/fondo.jpg" id="principalImage"></image>
+  </picture> -->
+
+  <div class="principalImage">
+    <!-- <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, est.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis, accusantium quas repudiandae molestiae officia.</p> -->
+  </div>
+
+  <div class="grid-general">
+    <div class="card1">
+      <a href="#title-html-info">
+        <image src="img/html.png" alt="html - HTML - logo html" id="image1"></image>
+      </a>
+      <div class="container-card1">
+        <h1>HTML</h1>
+      </div>
+    </div>
+    <div class="card2">
+      <a href="#title-css-info">
+        <image src="img/css.png" alt="css - CSS - logo css" id="image2"></image>
+      </a>
+      <div class="container-card2">
+        <h1>CSS</h1>
+      </div>
+    </div>
+    <div class="card3">
+      <a href="#title-js-info">
+        <image src="img/js.png" alt="js - Javascript - logo Javascript" id="image3"></image>
+      </a>
+      <div class="container-card3">
+        <h1>JAVASCRIPT</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="container-Info">
+      <h2 id="title-html-info">Introducción a Html</h2>
+
+      <p class="languages-info">
+        El <b>Lenguaje de Marcado de Hipertexto </b> (HTML) es el código que se utiliza para estructurar y desplegar una
+        página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes
+        y
+        tablas de datos. <br><br>
+        HTML <b>no es</b> un lenguaje de programación , como dijimos , es un <b>lenguaje de marcado</b> que
+        define la estructura de tu contenido. HTML consiste en una serie de elementos que usarás para encerrar
+        diferentes partes del contenido para que se vean o comporten de una determinada manera. <br><br>
+      </p>
+
+      <h6 class="secondary-titles">Head y body</h6>
+      <p class="languages-info">
+        La <b>cabecera</b> o el <b>head</b> es la parte "no visible" de la página web en la que se incluyen las <a
+          href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/meta" target="_blank">etiquetas meta</a> que se
+        usan para describir la página, el título de la página, el idioma, información relacionada con hojas de estilo,
+        etc. Todo lo que se indique en la <b>cabecera</b> no aparecerá en la página como tal, sin embargo es una
+        parte importantísima.
+        <br><br>
+        En el <b>body</b> se introducen todas las etiquetas que nos permiten dar formato al documento, que se detallaran
+        luego.
+      </p>
+
+      <h6 class="secondary-titles">Títulos</h6>
+      <p class="languages-info">
+        Las etiquetas que definen los títulos se pueden utilizar para marcar el título y/o los diferentes apartados que
+        forman el documento, o simplemente para resaltar cualquier texto. Existen seis tipos de títulos, que van de la
+        etiqueta <b>h1</b> (la más grande) a la <b>h6</b> (la más pequeña). <br>
+        <image src="img/ejemplo-titulos.jpg" alt="h1 - h2 - h3 - h4 - h5 - h6 - títulos html" id="example-images">
+        </image>
+      </p>
+
+      <h6 class="secondary-titles">Párrafos</h6>
+      <p class="languages-info">
+        Los párrafos se delimitan con las etiquetas <b>p</b> . Un párrafo es un bloque de texto que se muestra separado
+        del
+        resto por un salto de línea. Si dentro del párrafo queremos hacer un salto de línea , es decír dejar un espacio
+        pero que se
+        siga considerando un único párrafo (enter en word) escribiríamos la etiqueta <b>br</b>.
+        <image src="img/ejemplo-parrafos.jpg" alt="p - párrafos - párrafos html - etiqueta br - salto de línea html"
+          id="example-images"></image>
+        <br>
+        Como habrás notado en la imagen anterior, donde estan las etiquetas <b>br</b>, el texto que seguía se fue para
+        abajo.
+      </p>
+
+      <h6 class="secondary-titles">Listas</h6>
+      <p class="languages-info">
+        Existen tres tipos de listas, las ordenadas, las no ordenadas y las listas de definiciones (las cuales no se
+        suelen usar).
+        Para las listas ordenadas usamos las etiquetas <b>ol</b> para delimitar la lista, y para las listas no
+        ordenadas, las etiquetas <b>ul</b>.
+        Para insertar cada elemento de la lista se introducen las etiquetas <b>li</b>.
+        <image src="img/ejemplo-listas.jpg" alt="ul - li - ol - listas ordenadas html - listas desordenadas html"
+          id="example-images"></image>
+      </p>
+
+      <h6 class="secondary-titles">Tablas</h6>
+      <p class="languages-info">
+        Para realizar una tabla debemos tener en cuenta que se está realizando de izquierda a derecha y de arriba abajo.
+        Es decir, empezamos desarrollando la primera fila, dentro de ella, las determinadas columnas que haya, y a
+        continuación, la siguiente fila. <br>
+        La tabla debe ir entre la etiqueta <b>table</b>, especificando el borde que deseamos.
+        La etiqueta que nos delimita las filas es <b>tr</b>, y para las columnas <b>td</b>.
+        Para combinar varias columnas o filas utilizamos los atributos <b>colspan</b> o <b>rowspan</b> respectivamente.
+        Si querés destacar una fila o columna para que se comporte como título se utiliza <b>th</b>.
+        <image src="img/ejemplo-tablas.jpg" alt="table - th - tablas - tablas html - tr - colspan - rowspan - td"
+          id="example-images"></image>
+      </p>
+
+      <h6 class="secondary-titles">Enlaces</h6>
+      <p class="languages-info">
+        Los enlaces nos permiten acceder a otras páginas, sitios web, ficheros (de música, vídeos, programas, imágenes,
+        etc.), permiten descargar archivos de la red y acceder a otras partes o secciones dentro de un documento. Se
+        realizan con la etiqueta <b>a href="http://www.enlace.com"</b> . Aquí se debe mencionar un atributo muy
+        importante: <b>target="_blank"</b> , el cual se utiliza para que el enlace indicado en la etiqueta <b>a</b> se
+        abra en una pestaña nueva del navegador.
+        <image src="img/ejemplo-enlaces.jpg" alt="a - enlaces html - target blank - enlace" id="example-images"></image>
+        <br>
+        En la imagen anterior, el link nos enviaría a facebook.com en una nueva pestaña.
+      </p>
+    </div>
+
+
+    <div class="container-Info">
+      <h2 id="title-css-info">Introducción a Css</h2>
+      <p class="languages-info">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, reiciendis! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Error eligendi veritatis, culpa voluptatem numquam quibusdam non, a quis mollitia
+        temporibus voluptate repudiandae quae architecto natus eius fugit sequi et ea necessitatibus itaque vero aliquid
+        atque. Tempora sapiente mollitia dolores assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Omnis voluptatum debitis voluptatibus hic id assumenda eos sunt minima quos vero natus vitae eaque consequatur
+        incidunt ut atque ab, quis culpa sint, dignissimos voluptates? Facere sapiente labore sunt, dolores nemo autem
+        rerum tenetur id inventore quasi veritatis dolor ea eos repellat! Modi exercitationem provident nemo ex nesciunt
+        ullam dignissimos? Ab consectetur laboriosam voluptatibus necessitatibus! Illo quam architecto laboriosam
+        officiis libero obcaecati minima voluptatum porro similique provident tenetur, assumenda atque expedita
+        consequuntur. Reprehenderit officiis facere dolor qui sapiente modi, illo commodi facilis non labore voluptates
+        inventore vitae quos. Omnis modi illo beatae.
+      </p>
+    </div>
+
+    <div class="container-Info">
+      <h2 id="title-js-info">Introducción a Javascript</h2>
+      <p class="languages-info">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, reiciendis! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Error eligendi veritatis, culpa voluptatem numquam quibusdam non, a quis mollitia
+        temporibus voluptate repudiandae quae architecto natus eius fugit sequi et ea necessitatibus itaque vero aliquid
+        atque. Tempora sapiente mollitia dolores assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Omnis voluptatum debitis voluptatibus hic id assumenda eos sunt minima quos vero natus vitae eaque consequatur
+        incidunt ut atque ab, quis culpa sint, dignissimos voluptates? Facere sapiente labore sunt, dolores nemo autem
+        rerum tenetur id inventore quasi veritatis dolor ea eos repellat! Modi exercitationem provident nemo ex nesciunt
+        ullam dignissimos? Ab consectetur laboriosam voluptatibus necessitatibus! Illo quam architecto laboriosam
+        officiis libero obcaecati minima voluptatum porro similique provident tenetur, assumenda atque expedita
+        consequuntur. Reprehenderit officiis facere dolor qui sapiente modi, illo commodi facilis non labore voluptates
+        inventore vitae quos. Omnis modi illo beatae.
+      </p>
+    </div>
+  </div>
+
+  <h4 id="about-us">Sobre nosotros</h4>
+  <div class="grid-devCards">
+
+    <div class="cardDev1">
+      <image src="img/Luciano.jpg" alt="" id="imageDev1"></image>
+      <div class="container-cardDev1">
+        <h3>LUCIANO RIENTE</h3>
+      </div>
+    </div>
+    <div class="devCards-info">
+      <p class="devCards-text">Mi nombre es Luciano Tomás Riente. Al dia de la fecha, tengo 17 años y soy estudiante en
+        un colegio técnico (pase
+        a 7mo, el último año, hace unos días). Llevo alrededor de 3 meses indagando en el mundo del desarrollo web,
+        apenas
+        sé lo básico de html,css y Javascript. Me encantaría poder aprender mucho más a lo largo de los años y terminar
+        trabajando en alguna rama del desarrollo web.</p>
+    </div>
+
+    <div class="cardDev2">
+      <image src="img/" alt="" id="imageDev2"></image>
+      <div class="container-cardDev2">
+        <h3>TOMÁS NOBILE</h3>
+      </div>
+    </div>
+    <div class="devCards-info">
+      <p class="devCards-text">Mi nombre es Tomás Nobile.</p>
+    </div>
+
+    <div class="cardDev3">
+      <image src="img/" alt="" id="imageDev3"></image>
+      <div class="container-cardDev3">
+        <h3>JOUSTIN ORTÍZ</h3>
+      </div>
+    </div>
+    <div class="devCards-info">
+      <p class="devCards-text">Mi nombre es Joustin Ortíz Franco.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="Copyright">
+      ©Dev Guide 2020
+    </div>
+    <div class="ImageFooter">
+      <img src="img/logo.png">
+    </div>
+  </footer>
+
+  <script src="js/slide.js"></script>
+
+</body>
+
+</html>
