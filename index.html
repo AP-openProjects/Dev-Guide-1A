@@ -27,6 +27,9 @@
         <li>
           <a href="#title-js-info">JAVASCRIPT</a>
         </li>
+        <li>
+          <a href="#about-us" class="about-us-nav">SOBRE NOSOTROS</a>
+        </li>
       </ul>
 
       <div class="burguer">
@@ -76,6 +79,7 @@
   <div class="info">
     <div class="container-Info">
       <h2 id="title-html-info">Introducción a Html</h2>
+
       <p class="languages-info">
         El <b>Lenguaje de Marcado de Hipertexto </b> (HTML) es el código que se utiliza para estructurar y desplegar una
         página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes
@@ -85,9 +89,9 @@
         define la estructura de tu contenido. HTML consiste en una serie de elementos que usarás para encerrar
         diferentes partes del contenido para que se vean o comporten de una determinada manera. <br><br>
       </p>
+
       <h6 class="secondary-titles">Head y body</h6>
       <p class="languages-info">
-        <!-- <u>Toda página web se divide en dos partes principales:</u>  La <b>cabecera</b> , y el <b>cuerpo</b> (head y body). <br><br> -->
         La <b>cabecera</b> o el <b>head</b> es la parte "no visible" de la página web en la que se incluyen las <a
           href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/meta" target="_blank">etiquetas meta</a> que se
         usan para describir la página, el título de la página, el idioma, información relacionada con hojas de estilo,
@@ -97,14 +101,68 @@
         En el <b>body</b> se introducen todas las etiquetas que nos permiten dar formato al documento, que se detallaran
         luego.
       </p>
+
       <h6 class="secondary-titles">Títulos</h6>
       <p class="languages-info">
         Las etiquetas que definen los títulos se pueden utilizar para marcar el título y/o los diferentes apartados que
         forman el documento, o simplemente para resaltar cualquier texto. Existen seis tipos de títulos, que van de la
         etiqueta <b>h1</b> (la más grande) a la <b>h6</b> (la más pequeña). <br>
-        <image src="img/ejemplo-titulos.jpg" alt="h1 - h2 - h3 - h4 - h5 - h6 - títulos html" id="image4"></image>
+        <image src="img/ejemplo-titulos.jpg" alt="h1 - h2 - h3 - h4 - h5 - h6 - títulos html" id="example-images">
+        </image>
+      </p>
+
+      <h6 class="secondary-titles">Párrafos</h6>
+      <p class="languages-info">
+        Los párrafos se delimitan con las etiquetas <b>p</b> . Un párrafo es un bloque de texto que se muestra separado
+        del
+        resto por un salto de línea. Si dentro del párrafo queremos hacer un salto de línea , es decír dejar un espacio
+        pero que se
+        siga considerando un único párrafo (enter en word) escribiríamos la etiqueta <b>br</b>.
+        <image src="img/ejemplo-parrafos.jpg" alt="p - párrafos - párrafos html - etiqueta br - salto de línea html"
+          id="example-images"></image>
+        <br>
+        Como habrás notado en la imagen anterior, donde estan las etiquetas <b>br</b>, el texto que seguía se fue para
+        abajo.
+      </p>
+
+      <h6 class="secondary-titles">Listas</h6>
+      <p class="languages-info">
+        Existen tres tipos de listas, las ordenadas, las no ordenadas y las listas de definiciones (las cuales no se
+        suelen usar).
+        Para las listas ordenadas usamos las etiquetas <b>ol</b> para delimitar la lista, y para las listas no
+        ordenadas, las etiquetas <b>ul</b>.
+        Para insertar cada elemento de la lista se introducen las etiquetas <b>li</b>.
+        <image src="img/ejemplo-listas.jpg" alt="ul - li - ol - listas ordenadas html - listas desordenadas html"
+          id="example-images"></image>
+      </p>
+
+      <h6 class="secondary-titles">Tablas</h6>
+      <p class="languages-info">
+        Para realizar una tabla debemos tener en cuenta que se está realizando de izquierda a derecha y de arriba abajo.
+        Es decir, empezamos desarrollando la primera fila, dentro de ella, las determinadas columnas que haya, y a
+        continuación, la siguiente fila. <br>
+        La tabla debe ir entre la etiqueta <b>table</b>, especificando el borde que deseamos.
+        La etiqueta que nos delimita las filas es <b>tr</b>, y para las columnas <b>td</b>.
+        Para combinar varias columnas o filas utilizamos los atributos <b>colspan</b> o <b>rowspan</b> respectivamente.
+        Si querés destacar una fila o columna para que se comporte como título se utiliza <b>th</b>.
+        <image src="img/ejemplo-tablas.jpg" alt="table - th - tablas - tablas html - tr - colspan - rowspan - td"
+          id="example-images"></image>
+      </p>
+
+      <h6 class="secondary-titles">Enlaces</h6>
+      <p class="languages-info">
+        Los enlaces nos permiten acceder a otras páginas, sitios web, ficheros (de música, vídeos, programas, imágenes,
+        etc.), permiten descargar archivos de la red y acceder a otras partes o secciones dentro de un documento. Se
+        realizan con la etiqueta <b>a href="http://www.enlace.com"</b> . Aquí se debe mencionar un atributo muy
+        importante: <b>target="_blank"</b> , el cual se utiliza para que el enlace indicado en la etiqueta <b>a</b> se
+        abra en una pestaña nueva del navegador.
+        <image src="img/ejemplo-enlaces.jpg" alt="a - enlaces html - target blank - enlace" id="example-images"></image>
+        <br>
+        En la imagen anterior, el link nos enviaría a facebook.com en una nueva pestaña.
       </p>
     </div>
+
+
     <div class="container-Info">
       <h2 id="title-css-info">Introducción a Css</h2>
       <p class="languages-info">
@@ -121,6 +179,7 @@
         inventore vitae quos. Omnis modi illo beatae.
       </p>
     </div>
+
     <div class="container-Info">
       <h2 id="title-js-info">Introducción a Javascript</h2>
       <p class="languages-info">
@@ -138,8 +197,10 @@
       </p>
     </div>
   </div>
-  <h4>Sobre nosotros</h4>
+
+  <h4 id="about-us">Sobre nosotros</h4>
   <div class="grid-devCards">
+
     <div class="cardDev1">
       <image src="img/Luciano.jpg" alt="" id="imageDev1"></image>
       <div class="container-cardDev1">
@@ -152,8 +213,9 @@
         a 7mo, el último año, hace unos días). Llevo alrededor de 3 meses indagando en el mundo del desarrollo web,
         apenas
         sé lo básico de html,css y Javascript. Me encantaría poder aprender mucho más a lo largo de los años y terminar
-        trabajando de esto.</p>
+        trabajando en alguna rama del desarrollo web.</p>
     </div>
+
     <div class="cardDev2">
       <image src="img/" alt="" id="imageDev2"></image>
       <div class="container-cardDev2">
@@ -163,6 +225,7 @@
     <div class="devCards-info">
       <p class="devCards-text">Mi nombre es Tomás Nobile.</p>
     </div>
+
     <div class="cardDev3">
       <image src="img/" alt="" id="imageDev3"></image>
       <div class="container-cardDev3">
@@ -173,8 +236,7 @@
       <p class="devCards-text">Mi nombre es Joustin Ortíz Franco.</p>
     </div>
   </div>
-
-  </div>
+  
   <footer>
     <div class="Copyright">
       ©Dev Guide 2020
