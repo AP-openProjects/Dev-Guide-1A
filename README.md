@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# project-1a
-=======
 # --- Proyecto realizado por Luciano Tomás Riente, Tomás Nobile y Joustin Ortiz Franco ---
 
 Guia para desarrolladores web en la que se pueden ver los conocimientos basicos que uno debe saber para ser un buen desarrollador web
