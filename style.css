@@ -458,6 +458,17 @@ h6 {
 /*=============================================
 Tomas
 =============================================*/
+
+.info-html{
+  padding:2rem 0;
+  background-color:#e7622a;
+}
+
+.info-css{
+  padding:2rem 0;
+  background-color: #4299ff;
+}
+
 .info-js{
   padding: 2rem 0;
   background-color:#f7df19 ;
@@ -487,11 +498,11 @@ Tomas
   font-weight: 600;
 }
 
-.historia-js{
+.historia{
   display: block;
   
 }
-.historia-js img{
+.historia img{
   max-width: 500px;
   float: left;
 }
@@ -543,7 +554,7 @@ Tomas
   }
 }
 @media only screen and (max-width:575.98px){
-  .historia-js img{
+  .historia img{
     max-width: 200px;
     
 
