@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  /* background-color: #ba7967; */
+  background-color: #ba7967;
   /* background-color: #20c1e1; */
   background-color: #f4f6ff;
   /* background-image: linear-gradient(to right, #f0a500 , #cf7500); */
@@ -30,15 +30,43 @@ header {
   /* position: fixed;  */
 }
 
-.principalImage {
+/* .principalImage {
   background-image: url("img/fondo.jpg");
   width: 100%;
   height: 400px;
   background-size: cover;
   background-position: 50% 50%;
 }
+ */
 
-.text-image {
+ 
+/* h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: underline gold;
+}
+
+
+ h3 {
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 0 0;
+  color: black;
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: 100px;
+  text-align: center;
+  color: black;
+  text-decoration: underline red;
+} */
+
+/* .text-image {
   max-width: 800px;
   height: 400px;
   margin: auto;
@@ -50,8 +78,8 @@ header {
   position: relative;
   z-index: 1;
 }
-
-.principalImage::before {
+ */
+/* .principalImage::before {
   content: "";
   width: 100%;
   height: 400px;
@@ -59,13 +87,13 @@ header {
   position: absolute;
   top: 6rem;
   left: 0;
-}
+} */
 
 p.description {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 nav {
@@ -227,14 +255,133 @@ nav {
   }
 }
 
+/*=============================================
+Header
+=============================================*/
+.container-header{
+  display: block;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4rem;
+}
+.header h1 {
+  font-size: 3rem;
+  align-self: center;
+  margin-right: 3rem;
+  font-weight: 600;
+}
+.header img {
+  max-width: 400px;
+  margin-left: 3rem;
+}
+
+/*=============================================
+MQ HEADER
+=============================================*/
+
+@media only screen and (max-width: 1199.98px) {
+
+
+  .header {
+    padding-top: 3rem;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header img {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+
+  .header {
+    padding-top: 1rem;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+
+
+  .header h1 {
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+  }
+  .header img {
+    max-width: 300px;
+    margin-left: 1.5rem;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+
+  .header {
+    flex-wrap: wrap;
+  }
+  .header h1 {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+    order: 1;
+    text-align: center;
+  }
+  .header img {
+    max-width: 390px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  html {
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  html {
+    padding-left: 1rem;
+  }
+  .header img {
+    max-width: 340px;
+  }
+}
+
+
+.tittle-card{
+  margin-top: 10rem;
+}
+.line{
+  margin-top: 10rem;
+  display: block;
+  max-width: 5rem;
+  background-color: black;
+  height: 4px;
+  margin: auto;
+}
+.tittle-card h2{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
 .grid-general {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 230px);
   gap: 5em;
   justify-content: center;
-  margin-top: 20px;
+  margin: 2rem 0 5rem;
   /* margin: 200px 0px 300px 0px; */
   /* background-color: orange; */
+}
+.grid-general h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 0 0;
+  color: white;
 }
 
 .card1,
@@ -251,22 +398,6 @@ nav {
   border-radius: 10px;
 }
 
-h1 {
-  font-size: 30px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 0 0 0;
-  color: white;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  text-decoration: underline gold;
-}
 
 .container-Info {
   margin-top: 50px;
@@ -360,22 +491,6 @@ h6::selection {
   /* esto deberia quedar igual */
 }
 
-h3 {
-  font-size: 25px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 0 0 0;
-  color: black;
-}
-
-h4 {
-  font-size: 30px;
-  margin-top: 100px;
-  text-align: center;
-  color: black;
-  text-decoration: underline red;
-}
 
 .devCards-info {
   /* background-color: #14ffec; */
@@ -543,7 +658,8 @@ Tomas
     text-align: center;
   }
   .container p{
-    font-size: 1.1rem;
+    text-align: left;
+    font-size: 1rem;
   }
   .historia-js img{
     max-width: 300px;
