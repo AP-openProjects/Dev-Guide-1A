@@ -9,4 +9,4 @@ Guide for web developers where it can be seen the basic knowledge that someone h
 
 # Information sources:
 
-- https://leonorcanuelo.com/conceptos-basicos-html/ 
+- 
