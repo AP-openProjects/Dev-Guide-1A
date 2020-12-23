@@ -10,43 +10,16 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  /* background-image: linear-gradient(to right, #fc8621, #f9e0ae); */
-  /* background-image: linear-gradient(to right , #1d2d50, #133b5c); */
   background-color: #f4f6ff;
-  /* background-image: linear-gradient(to right, #fc8621, #c24914); */
-  /* background-color: #f9e0ae; */
-  /* text-align: center; */
 }
 
 header {
   background-color: #ba7967;
-  /* background-color: #20c1e1; */
   background-color: #f4f6ff;
-  /* background-image: linear-gradient(to right, #f0a500 , #cf7500); */
-  /* background-image: url("https://images.unsplash.com/photo-1585402210468-66f32841af08?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=375&q=80"); */
   background-size: cover;
   height: 6rem;
   /* position: fixed; */
 }
-
-/* .principalImage {
-  background-image: url("img/fondo.jpg");
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: 50% 50%;
-} 
- 
-
- 
-h2 {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  text-decoration: underline gold;
-} 
-*/
 
 h3 {
   font-size: 25px;
@@ -64,36 +37,6 @@ h4 {
   color: black;
   text-decoration: underline red;
 }
-
-/* .text-image {
-  max-width: 800px;
-  height: 400px;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
- */
-/* .principalImage::before {
-  content: "";
-  width: 100%;
-  height: 400px;
-  background: rgba(25, 81, 235, 0.76);
-  position: absolute;
-  top: 6rem;
-  left: 0;
-} */
-
-/* p.description {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-} */
 
 nav {
   align-items: center;
@@ -135,7 +78,6 @@ nav {
 
 .nav-links a:hover {
   color: white;
-  /* text-shadow: 1px 2px black; */
 }
 
 .burguer {
@@ -361,8 +303,6 @@ MQ HEADER
   gap: 5em;
   justify-content: center;
   margin: 2rem 0 5rem;
-  /* margin: 200px 0px 300px 0px; */
-  /* background-color: orange; */
 }
 .grid-general h1 {
   font-size: 30px;
@@ -381,31 +321,18 @@ MQ HEADER
   height: 270px;
   box-shadow: 0px 4px 4px 0 black;
   text-align: center;
-  /* background-color: black; */
   background-image: linear-gradient(to right, black, grey);
   border-radius: 10px;
 }
 
 .container-Info {
   margin-top: 50px;
-  /* margin-bottom: 200px; */
 }
 
 .languages-info {
   font-size: 1.3rem;
   padding: 0 20px;
 }
-
-/* .languages-info::selection,
-b::selection,
-br::selection,
-.devCards-text::selection,
-img::selection,
-a::selection,
-.Copyright::selection {
-  background-color: #fde345;
-  color: #555;
-} */
 
 h1::selection,
 h2::selection,
@@ -443,10 +370,7 @@ h6::selection {
   grid-template-columns: 270px 995px;
   grid-template-rows: 270px;
   gap: 2em;
-  /* justify-content: center; */
   margin-top: 50px;
-  /* margin: 200px 0px 300px 0px; */
-  /* background-color: orange; */
   margin-bottom: 120px;
 }
 
@@ -459,27 +383,19 @@ h6::selection {
   height: 270px;
   box-shadow: 0px 4px 4px 0 black;
   text-align: center;
-  /* background-image: linear-gradient(to right, black, grey); */
-  /* background-color: gold; */
   background-color: #fff3b2;
   border-radius: 10px;
-
   justify-self: left;
   margin-left: 40px;
-  /* esto deberia quedar igual */
 }
 
 .container-cardDev1,
 .container-cardDev2,
 .container-cardDev3 {
   margin: auto;
-  /* background-color: red; */
-  /* esto deberia quedar igual */
 }
 
 .devCards-info {
-  /* background-color: #14ffec; */
-  /* background-color: #f1f1f1; */
   background-color: #fff3b2;
   border: 1px solid black;
   border-radius: 10px;
@@ -488,11 +404,10 @@ h6::selection {
 }
 
 p.devCards-text {
-  margin-top: 40px;
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
   color: black;
-  padding: 10px;
+  padding: 50px;
 }
 
 #imageDev1,

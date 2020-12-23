@@ -60,7 +60,7 @@ sr.reveal(".iframe", {
 });
 
 sr.reveal(".footer", {
-    duration: 1700,
-    origin: "bottom",
-    distance: "500px",
-  });
+  duration: 1700,
+  origin: "bottom",
+  distance: "500px",
+});

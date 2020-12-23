@@ -9,7 +9,7 @@ document.getElementById("joustin-card").addEventListener("click", function () {
   document.getElementById("name-dev").innerHTML = "JOUSTIN ORTÍZ";
   imageDev1.src = "img/Joustin.jpg";
   document.getElementById("change-text").innerHTML =
-    "Joustin Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsa omnis distinctio alias placeat elige  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsa omnis distinctio alias placeat eligendi recusandae";
+    "Mi nombre es Joustin Ortiz, tengo 13 años (se que es algo temprano para empezar) me empezó a interesar todo el tema del desarrollo desde ya hace mucho tiempo, pero es desde hace un mes, el cual empece con fundamentos de programación y me gustaría algún día trabajar de esto.";
 });
 
 document.getElementById("luciano-card").addEventListener("click", function () {
