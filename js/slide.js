@@ -1,11 +1,11 @@
 /* ### VARIABLES ### */
 
 // Botón hamburguesa
-const burger = document.querySelector(".burguer");
+const burger = document.querySelector(".burger div");
 // Lista de navegación del header
 const nav = document.querySelector(".nav-links");
 // Header
-// const header = document.querySelector(".main-header");
+const header = document.querySelector("#header-iteration");
 // Contenedor del header
 // const headerContainer = document.querySelector(".header-container");
 // Listas del nav
@@ -28,11 +28,11 @@ function escPushed() {
 }
 
 // Si se presiona en alguna parte que no sea el header se cierra el menú de navegación en mobile
-// window.addEventListener("click", (e) => {
-//   if (nav.classList.contains("nav-active") && e.target !== header && e.target !== headerContainer && e.target !== burger) {
-//     nav.classList.remove("nav-active");
-//   }
-// });
+window.addEventListener("click", (e) => {
+  if (nav.classList.contains("nav-active") && e.target !== burger) {
+    nav.classList.toggle("nav-active");
+  }
+});
 
 // Inmediatamente que se presione la tecla ESCAPE se cierra el menú de navegación
 window.onkeydown = escPushed;

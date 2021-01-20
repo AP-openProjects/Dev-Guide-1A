@@ -7,6 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f4f6ff;
+  text-align: center;
 }
 /* ######################################################### */
 
@@ -36,6 +37,7 @@ header {
   justify-content: space-between;
   background-color: #f4f6ff;
   z-index: 100;
+  opacity: 0.9;
 }
 @media (min-width: 1000px) {
   header {
@@ -67,7 +69,7 @@ header {
 }
 @media (min-width: 768px) {
   .nav-links {
-    top: 9rem;
+    top: 8rem;
   }
 }
 @media (min-width: 1000px) {
@@ -106,23 +108,23 @@ header {
     border: none;
   }
 }
-.burguer {
+.burger {
   position: absolute;
   top: 1.9rem;
   right: 2rem;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .burguer {
+  .burger {
     top: 2.8rem;
   }
 }
 @media (min-width: 1000px) {
-  .burguer {
+  .burger {
     display: none;
   }
 }
-.burguer div {
+.burger div {
   background-color: #252522;
   height: 0.3rem;
   margin: 0.4rem;
@@ -163,9 +165,6 @@ header {
 /* ######################################################### */
 
 /* #################### TECNOLOGÍAS ######################### */
-/* .title-card{
-  margin-top: 5rem;
-} */
 .line {
   display: block;
   max-width: 8rem;
@@ -180,15 +179,17 @@ header {
 }
 .grid-general {
   display: grid;
-  grid-template-rows: repeat(3, 230px);
-  gap: 5em;
+  grid-template-rows: repeat(3, 270px);
+  gap: 4em;
   justify-content: center;
-  margin: 4rem 0 5rem;
+  margin: 4rem 0;
 }
 @media (min-width: 768px) {
   .grid-general {
     grid-template-columns: repeat(3, 230px);
+    grid-template-rows: none;
     gap: 2em;
+    margin-bottom: 10rem;
   }
 }
 @media (min-width: 1000px) {
@@ -200,7 +201,7 @@ header {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin: 0;
+  margin: 0.2rem 0;
   color: white;
 }
 .card1,
@@ -231,296 +232,247 @@ header {
     opacity: 0.6;
   }
 }
+/* ######################################################### */
 
-/* .info-html{
-  padding:2rem 0;
-  background-color:#e7622a;
+/* #################### INFORMACIÓN DE LOS LENGUAJES ######################### */
+.info-html {
+  padding: 2rem 0;
+  background-color: #e7622a;
 }
-
-.info-css{
-  padding:2rem 0;
+.info-css {
+  padding: 2rem 0;
   background-color: #4299ff;
 }
-
-.info-js{
+.info-js {
   padding: 2rem 0;
-  background-color:#f7df19 ;
+  background-color: #f7df19;
 }
-
-.container{
-  display: block;
-   max-width:80%;
-   margin: auto;
-   padding: 1rem 2rem;
+.container {
+  padding: 2rem;
 }
-.container h2{
-  text-decoration: none;
-  margin: 0 0 1rem 0;
-  font-size: 2.7rem;
+.container h2 {
+  margin-bottom: 3rem;
+  font-size: 4rem;
 }
-.container h3{
+.container h3 {
   font-size: 2.3rem;
-  text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-.container p{
-   font-size: 1.4rem;
-   text-align: justify;
+.container p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 3rem;
 }
-.container b{
+.container b {
   font-weight: 600;
 }
-
-.historia{
+.historia {
   display: block;
-  
 }
-.historia img{
-  max-width: 500px;
-  float: left;
+.historia img {
+  width: 32rem;
+  margin: 2rem 0;
 }
-
-.iframe{
+@media (min-width: 768px) {
+  .historia img {
+    float: left;
+  }
+}
+.iframe {
   display: block;
   margin: auto;
   position: relative;
   width: 60%;
-  padding-bottom:30%;
+  padding-bottom: 30%;
   height: 0;
 }
-.iframe iframe{
-  position:absolute;
+.iframe iframe {
+  position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   height: 100%;
-  margin:auto;
-}
-
-
-@media only screen and (max-width:1199.98px){
-
-}
-@media only screen and (max-width:991.98px){
-
-}
-@media only screen and (max-width:767.98px){
-  
-  .container{
-    display: block;
-     max-width:100%;
-     margin: auto;
-     padding: 1rem 2rem;
-  }
-  .container h3{
-    text-align: center;
-  }
-  .container p{
-    text-align: left;
-    font-size: 1rem;
-  }
-  .historia-js img{
-    max-width: 300px;
-    float: none;
-    display: block;
-    margin: auto;
-
-  }
-}
-@media only screen and (max-width:575.98px){
-  .historia img{
-    max-width: 200px;
-    
-
-  }
-}
-
-
-
-
-
-.grid-devCards {
-  display: grid;
-  grid-template-columns: 270px 995px;
-  grid-template-rows: repeat(3, 270px);
-  gap: 2em;
-  margin-top: 50px;
-  margin-bottom: 120px;
-}
-
-.cardDev1,
-.cardDev2,
-.cardDev3 {
-  display: grid;
-  grid-template-rows: 230px 40px;
-  width: 230px;
-  height: 270px;
-  box-shadow: 0px 4px 4px 0 black;
-  text-align: center;
-  background-color: #fff3b2;
-  border-radius: 10px;
-
-  justify-self: left;
-  margin-left: 40px;
-}
-
-.container-cardDev1,
-.container-cardDev2,
-.container-cardDev3 {
   margin: auto;
 }
+/* ######################################################### */
 
-
+/* ########################### SOBRE NOSOTROS ########################### */
+.dev-stories {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .dev-stories {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1000px) {
+  .dev-stories {
+    justify-content: center;
+  }
+}
+.image-stories-container {
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  border: 3px solid #000;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .image-stories-container:hover {
+    border: 3px solid #fa1e34;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1000px) {
+  .image-stories-container {
+    margin-right: 4rem;
+  }
+}
+.stories-img {
+  width: 11.6rem;
+  height: 11.6rem;
+  border-radius: 50%;
+}
+.grid-devCards {
+  display: grid;
+  grid-template-columns: 270px;
+  grid-template-rows: repeat(2, 300px);
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2em;
+}
+@media (min-width: 768px) {
+  .grid-devCards {
+    grid-template-rows: 295px;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 0.5em;
+  }
+}
+.cardDev1 {
+  display: grid;
+  text-align: center;
+  width: 24rem;
+  height: 29rem;
+  background-color: #fff3b2;
+  border-radius: 10px;
+  justify-self: center;
+  box-shadow: 0px 4px 4px 0 black;
+}
+.container-cardDev1 h3 {
+  margin: 1rem auto;
+}
+#imageDev1 {
+  border-bottom: 2px solid grey;
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+  min-width: 24rem;
+  max-height: 25rem;
+}
 .devCards-info {
   background-color: #fff3b2;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 0 black;
-  height: 270px;
+  max-width: 27rem;
+  max-height: 31rem;
 }
-
 .devCards-text {
-  margin-top: 40px;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   color: black;
-  padding: 10px;
+  padding: 2rem;
 }
-
-#imageDev1,
-#imageDev2,
-#imageDev3 {
-  border-bottom: 2px solid grey;
-  border-radius: 10px 10px 0px 0px;
-  background-color: white;
-  justify-content: center;
-  width: 230px;
-  height: 230px;
-}
-
-footer {
-  background-color: #b9ac92;
-}
-
-.ImageFooter {
-  padding-top: 10px;
-  height: auto;
-  width: 500px;
-  margin-left: 840px;
-  position: relative;
-  bottom: 20px;
-}
-
-.Copyright {
-  color: black;
-  font-size: 20px;
-  padding-left: 50px;
-  padding-bottom: 10px;
-  position: relative;
-  top: 50px;
-}
-
-u {
-  text-decoration: underline red;
-}
-
-h6 {
-  font-size: 30px;
-  padding: 0 20px;
-  margin: 0;
-  color: #20c1e1;
-  text-shadow: 1px 1px 2px black;
-}
-
-#example-images {
-  margin: 20px 5px;
-  border: 5px solid #333;
-  border-radius: 10px;
-  box-shadow: 4px 4px 4px 0 black;
-}
-
-.about-us-nav {
-  margin-left: 30px !important;
-  font-weight: bold !important;
-}
-
-.dev-stories {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-stories-container {
-  width: 120px;
-  height: 120px;
-  margin: 2px 25px;
-  border-radius: 50%;
-  border: 3px solid #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-stories-container:hover {
-  border: 3px solid #fa1e34;
-  cursor: pointer;
-}
-
-.stories-img {
-  width: 116px;
-  height: 116px;
-  border-radius: 50%;
-} */
-
-/*=============================================
-ANCHOR Social media
-=============================================*/
-
-/* .social-media {
+.social-media {
   display: flex;
   justify-content: center;
 }
 .social-media-icons {
   border-radius: 50%;
   display: inline-block;
-  margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  width: 80px;
-  height: 80px;
+  margin: 4rem 2rem;
+  width: 8rem;
+  height: 8rem;
   border: 2px solid #000;
   text-align: center;
   color: #000;
   background-color: #fff3b2;
 }
-.social-media-icons:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+.social-media-icons {
+  margin: 3rem 2rem;
+}
+@media (min-width: 768px) {
+  .social-media-icons:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  }
 }
 .social-media-icons i {
-  font-size: 50px;
-  line-height: 80px;
+  font-size: 5rem;
+  line-height: 8rem;
 }
+/* ######################################################### */
 
+/* ########################### FOOTER AP ########################### */
 .footerAP-container {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #111;
   color: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 100px;
-  font-size: 2rem;
+  margin-bottom: 10rem;
+  font-size: 1.5rem;
   font-weight: 200;
+}
+@media (min-width: 1000px) {
+  .footerAP-container {
+    padding: 2rem;
+    font-size: 2rem;
+  }
 }
 .bolder {
   font-weight: 700;
 }
 .AP-social-media-icons {
-  color:#EAED1D;
+  color: #eaed1d;
   font-size: 3rem;
-  padding-top: 1rem;
+  padding: 1rem 0 0 0.5rem;
 }
-.AP-social-media-icons:hover {
-  color: #fff;
-} */
+@media (min-width: 768px) {
+  .AP-social-media-icons:hover {
+    color: #fff;
+  }
+}
+@media (min-width: 1000px) {
+  .AP-social-media-icons {
+    font-size: 4rem;
+  }
+}
+/* ######################################################### */
+
+/* ########################### FOOTER PÁGINA ########################### */
+.footer {
+  background-color: #b9ac92;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ImageFooter {
+  width: 50%;
+}
+.Copyright {
+  color: black;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+@media (min-width: 1000px) {
+  .Copyright {
+    font-size: 2rem;
+  }
+}
+/* ######################################################### */
