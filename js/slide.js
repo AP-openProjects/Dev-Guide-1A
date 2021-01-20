@@ -1,13 +1,41 @@
-const navSlide = () => {
-  const burguer = document.querySelector(".burguer");
-  const nav = document.querySelector(".nav-links");
+/* ### VARIABLES ### */
 
-  burguer.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
-  });
-};
+// Botón hamburguesa
+const burger = document.querySelector(".burguer");
+// Lista de navegación del header
+const nav = document.querySelector(".nav-links");
+// Header
+// const header = document.querySelector(".main-header");
+// Contenedor del header
+// const headerContainer = document.querySelector(".header-container");
+// Listas del nav
+// const listNav = document.querySelector(".li-header"); // Solo toma la primer lista, las otras no (?)
 
-navSlide();
+/* ### FUNCIONES ### */
+
+// Abrir el menú de navegación en mobile
+burger.addEventListener("click", () => {
+  // Se le da la clase de active para hacer un movimiento de la posición absoluta para la transición
+  nav.classList.toggle("nav-active");
+});
+
+// Si se presiona la tecla ESCAPE se cierra el menú de navegación en mobile
+function escPushed() {
+  teclaEsc = event.keyCode;
+  if (teclaEsc == 27) {
+    nav.classList.remove("nav-active");
+  }
+}
+
+// Si se presiona en alguna parte que no sea el header se cierra el menú de navegación en mobile
+// window.addEventListener("click", (e) => {
+//   if (nav.classList.contains("nav-active") && e.target !== header && e.target !== headerContainer && e.target !== burger) {
+//     nav.classList.remove("nav-active");
+//   }
+// });
+
+// Inmediatamente que se presione la tecla ESCAPE se cierra el menú de navegación
+window.onkeydown = escPushed;
 
 window.sr = ScrollReveal();
 

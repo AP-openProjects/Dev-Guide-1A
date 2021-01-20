@@ -2,91 +2,89 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Dev-Guide</title>
 </head>
 
 <body>
 
   <header>
+    <!-- class="general-container" -->
+    <div class="logo">
+      <a href="index.html">
+        <img class="imagen-navegacion" src="img/logo.png" alt="">
+      </a>
+    </div>
     <nav>
-        
-      <div class="logo">
-          <a href="/">
-          <img class="imagen-navegacion" src="img/logo.png" alt="" />
-          </a>
-      </div>
-      <div class="burguer">
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
       <ul class="nav-links">
-      <li>
-        <a href="#title-html-info">HTML</a>
-      </li>
-      <li>
-        <a href="#title-css-info">CSS</a>
-      </li>
-      <li>
-        <a href="#title-js-info">JAVASCRIPT</a>
-      </li>
-      <li>
-        <a href="#about-us" class="about-us-nav">SOBRE NOSOTROS</a>
-      </li>
-    </ul>
-
-  </nav>
-
+        <li>
+          <a href="#title-html-info">HTML</a>
+        </li>
+        <li>
+          <a href="#title-css-info">CSS</a>
+        </li>
+        <li>
+          <a href="#title-js-info">JAVASCRIPT</a>
+        </li>
+        <li>
+          <a href="#about-us" class="about-us-nav">NOSOTROS</a>
+        </li>
+      </ul>
+      <div class="burguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
   </header>
 
-  <div class="header container-header">
-    <h1>Tu guia <br> para ser <br> web developer</h1>
+  <div class="header-text">
     <img src="img/coding.png" alt="">
+    <h1>Tu guia <br> para ser <br> web developer</h1>
   </div>
 
 
-  <div class="tittle-card">
+  <div class="title-card">
     <div class="line"></div>
     <h2>Tecnologías</h2>
-
   </div>
   <div class="grid-general">
-    <div class="card1">
-      <a href="#title-html-info">
-        <image src="img/html.png" alt="html - HTML - logo html" id="image1"></image>
-      </a>
-      <div class="container-card1">
-        <h1>HTML</h1>
+      <div class="card1">
+        <a href="#title-html-info">
+          <image src="img/html.png" alt="html - HTML - logo html" id="image1"></image>
+        </a>
+        <div class="container-card1">
+          <h2>HTML</h2> <!-- Eran h1 -->
+        </div>
+      </div>
+      <div class="card2">
+        <a href="#title-css-info">
+          <image src="img/css.png" alt="css - CSS - logo css" id="image2"></image>
+        </a>
+        <div class="container-card2">
+          <h2>CSS</h2>
+        </div>
+      </div>
+      <div class="card3">
+        <a href="#title-js-info">
+          <image src="img/js.png" alt="js - Javascript - logo Javascript" id="image3"></image>
+        </a>
+        <div class="container-card3">
+          <h2>JAVASCRIPT</h2>
+        </div>
       </div>
     </div>
-    <div class="card2">
-      <a href="#title-css-info">
-        <image src="img/css.png" alt="css - CSS - logo css" id="image2"></image>
-      </a>
-      <div class="container-card2">
-        <h1>CSS</h1>
-      </div>
-    </div>
-    <div class="card3">
-      <a href="#title-js-info">
-        <image src="img/js.png" alt="js - Javascript - logo Javascript" id="image3"></image>
-      </a>
-      <div class="container-card3">
-        <h1>JAVASCRIPT</h1>
-      </div>
-    </div>
-  </div>
 
-  <div class="info">
+  <!-- <div class="info">
     <div class="container-Info">
 
       <div class="info-html">
@@ -314,37 +312,39 @@
       </div>
     </div>
   </div>
-<div class="container">
-  <h4 id="about-us" class="about-us-h4">Sobre nosotros</h4>
-  <div class="dev-stories">
-    <div class="image-stories-container" id="luciano-card"><img src="img/Luciano.jpg" alt="" class="stories-img"></div>
-    <div class="image-stories-container" id="tomas-card"><img src="img/Tomas.jpg" alt="" class="stories-img"></div>
-    <div class="image-stories-container" id="joustin-card"><img src="img/Joustin.jpg" alt="" class="stories-img"></div>
-  </div>
-  <div class="grid-devCards">
-    <div class="cardDev1">
-      <image src="img/Luciano.jpg" alt="" id="imageDev1"></image>
-      <div class="container-cardDev1">
-        <h3 id="name-dev">LUCIANO RIENTE</h3>
+  <div class="container">
+    <h4 id="about-us" class="about-us-h4">Sobre nosotros</h4>
+    <div class="dev-stories">
+      <div class="image-stories-container" id="luciano-card"><img src="img/Luciano.jpg" alt="" class="stories-img">
+      </div>
+      <div class="image-stories-container" id="tomas-card"><img src="img/Tomas.jpg" alt="" class="stories-img"></div>
+      <div class="image-stories-container" id="joustin-card"><img src="img/Joustin.jpg" alt="" class="stories-img">
       </div>
     </div>
-    <div class="devCards-info">
-      <p class="devCards-text" id="change-text">Mi nombre es Luciano Tomás Riente. Al dia de la fecha, tengo los
-        conocimientos básicos de C++, HTML, CSS y Javascript. Me encantaría poder aprender mucho más a lo largo de los
-        años y en un futuro lograr trabajar en algún ambito de la programación.</p>
+    <div class="grid-devCards">
+      <div class="cardDev1">
+        <image src="img/Luciano.jpg" alt="" id="imageDev1"></image>
+        <div class="container-cardDev1">
+          <h3 id="name-dev">LUCIANO RIENTE</h3>
+        </div>
+      </div>
+      <div class="devCards-info">
+        <p class="devCards-text" id="change-text">Mi nombre es Luciano Tomás Riente. Al dia de la fecha, tengo los
+          conocimientos básicos de C++, HTML, CSS y Javascript. Me encantaría poder aprender mucho más a lo largo de los
+          años y en un futuro lograr trabajar en algún ambito de la programación.</p>
+      </div>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/luciano-riente-7551901b1/" class="social-media-icons"
+        id="social-link-linkedin">
+        <i class='bx bxl-linkedin-square'></i>
+      </a>
+      <a href="https://github.com/Lucssiano" class="social-media-icons" id="social-link-github">
+        <i class='bx bxl-github'></i>
+      </a>
     </div>
   </div>
-
-  <div class="social-media">
-    <a href="https://www.linkedin.com/in/luciano-riente-7551901b1/" class="social-media-icons"
-      id="social-link-linkedin">
-      <i class='bx bxl-linkedin-square'></i>
-    </a>
-    <a href="https://github.com/Lucssiano" class="social-media-icons" id="social-link-github">
-      <i class='bx bxl-github'></i>
-    </a>
-  </div>
-</div>
   <footer class="footer-AP">
     <div class="footerAP-container">
       <p>Página desarrollada por <span class="bolder">Dev-Guide Team</span></p>
@@ -370,7 +370,7 @@
     <div class="ImageFooter">
       <img src="img/logo.png">
     </div>
-  </footer>
+  </footer> -->
 
   <script src="js/slide.js"></script>
   <script src="js/about-us.js"></script>
